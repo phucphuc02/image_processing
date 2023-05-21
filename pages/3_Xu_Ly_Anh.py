@@ -54,7 +54,7 @@ def main():
     image = st.file_uploader("Upload Image", type=['jpg', 'png', 'jpeg', 'webp'])            
 
     if image is None:
-        image = 'img_test.png'
+        image = 'pokemon-icon-png-3.jpg'
     image = Image.open(image)
     new_img = Choose_Algorithm(selection, image)
 
